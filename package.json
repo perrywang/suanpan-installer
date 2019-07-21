@@ -6,14 +6,10 @@
   "homepage": "./",
   "dependencies": {
     "@babel/runtime": "^7.5.5",
-    "concurrently": "^4.1.1",
-    "cross-env": "^5.2.0",
     "electron-is-dev": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "wait-on": "^3.3.0"
+    "react-router-dom": "^5.0.1"
   },
   "scripts": {
     "react-start": "react-scripts start",
@@ -41,7 +37,11 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^4.1.1",
+    "cross-env": "^5.2.0",
     "electron": "^5.0.7",
-    "electron-builder": "^21.1.1"
+    "electron-builder": "^21.1.1",
+    "react-scripts": "^3.0.1",
+    "wait-on": "^3.3.0"
   }
 }
