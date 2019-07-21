@@ -8,3 +8,9 @@ electron suanpan UI installer
 ```bash
 2. npm start
 ```
+
+## production
+```bash
+npm run build
+```
+you could find executable program in dist folder
