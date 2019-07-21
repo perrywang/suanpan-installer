@@ -2,14 +2,12 @@
   "name": "suanpan-installer",
   "version": "0.1.0",
   "private": true,
-  "main": "public/main.js",
+  "main": "public/electron.js",
   "homepage": "./",
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "concurrently": "^4.1.1",
     "cross-env": "^5.2.0",
-    "electron": "^5.0.7",
-    "electron-builder": "^21.1.1",
     "electron-is-dev": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -41,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^5.0.7",
+    "electron-builder": "^21.1.1"
   }
 }
