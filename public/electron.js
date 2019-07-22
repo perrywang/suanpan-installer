@@ -7,10 +7,10 @@ const isDev = require("electron-is-dev");
 const runner = require('./runner')
 let mainWindow;
 
-if (process.resourcesPath) {
+if (isDev) {
     console.log('process.resourcesPath', process.resourcesPath)
-    runner(`echo start count > ${process.resourcesPath}/shell_scripts/count`)
-    runner(`bash ${process.resourcesPath}/shell_scripts/test.sh`) // hello world to run scripts
+    runner(`echo start count > shell_scripts/count`)
+    runner(`bash shell_scripts/test.sh`) // hello world to run scripts
 } else {
     console.log('process.resourcesPath', process.resourcesPath)
     runner(`echo start count > ${process.resourcesPath}/shell_scripts/count`)
