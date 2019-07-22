@@ -21,6 +21,9 @@
     "build": "npm run react-build && cross-env CSC_IDENTITY_AUTO_DISCOVERY=false npm run electron-build",
     "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
+  "build": {
+    "extraResources": "shell_scripts"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
